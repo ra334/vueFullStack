@@ -3,6 +3,7 @@
   header
   main
   footer
+
 </template>
 
 <script>

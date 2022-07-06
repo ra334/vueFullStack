@@ -1,6 +1,7 @@
 <template lang="pug">
 button test1
 button test2
+
 </template>
 
 <script>

@@ -8,6 +8,7 @@ header.header
       a.sign_in(href="/account") Sign in
       a.sign_up(href="/account") Sign up
 
+
 </template>
 
 <script>

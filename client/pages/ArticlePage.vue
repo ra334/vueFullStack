@@ -1,8 +1,10 @@
 <template lang="pug">
+
 .container
   header
   main
   footer
+
 </template>
 
 <script>

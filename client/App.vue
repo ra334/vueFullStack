@@ -2,6 +2,7 @@
 h1 RouterApp
 .container
   router-view
+
 </template>
 
 <script>
