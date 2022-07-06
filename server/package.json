@@ -1,0 +1,27 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node app.bundle.js",
+        "build": "webpack",
+        "dev": "nodemon ./server.js localehost:3080"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.20.0",
+        "connect": "^3.7.0",
+        "ejs": "^3.1.8",
+        "express": "^4.17.3",
+        "http-proxy-middleware": "^2.0.6",
+        "node-fetch": "^3.2.5",
+        "pg": "^8.7.3"
+    },
+    "devDependencies": {
+        "del": "^6.1.1",
+        "fancy-log": "^2.0.0"
+    }
+}
