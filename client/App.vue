@@ -1,7 +1,7 @@
 <template lang="pug">
+h1 RouterApp
 .container
-  main-page
-
+  router-view
 </template>
 
 <script>

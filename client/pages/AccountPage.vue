@@ -1,7 +1,8 @@
 <template lang="pug">
-header
-main
-footer
+.container
+  header
+  main
+  footer
 </template>
 
 <script>

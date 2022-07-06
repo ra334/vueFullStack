@@ -3,10 +3,10 @@
 header.header
   .header__main
     .header__menu
-      a.create__post Create post
+      a.create__post(href="#") Create post
     .header__auterization
-      a.sign_in(href="#") Sign in
-      a.sign_up(href="#") Sign up
+      a.sign_in(href="/account") Sign in
+      a.sign_up(href="/account") Sign up
 
 </template>
 
