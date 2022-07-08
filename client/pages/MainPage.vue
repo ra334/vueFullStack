@@ -1,8 +1,8 @@
 <template lang="pug">
-.container
-  main-page-header
-  main-page-main
-  main-page-footer
+
+main-page-header
+main-page-main
+main-page-footer
 </template>
 
 <script>

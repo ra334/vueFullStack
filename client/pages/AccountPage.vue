@@ -1,21 +1,21 @@
 <template lang="pug">
-.container
-  header
-  main
-  footer
+
+account-header
+account-main
+account-footer
 
 </template>
 
 <script>
-import Header from "../layouts/AccountPageLayouts/Header.vue";
-import Main from "../layouts/AccountPageLayouts/Main.vue";
-import Footer from "../layouts/AccountPageLayouts/Footer.vue";
+import AccountHeader from "../layouts/AccountPageLayouts/Header.vue";
+import AccountMain from "../layouts/AccountPageLayouts/Main.vue";
+import AccountFooter from "../layouts/AccountPageLayouts/Footer.vue";
 
 export default {
   components: {
-    Header,
-    Main,
-    Footer,
+    AccountHeader,
+    AccountMain,
+    AccountFooter,
   },
 };
 </script>

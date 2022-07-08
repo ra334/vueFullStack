@@ -1,22 +1,22 @@
 <template lang="pug">
 
-.container
-  header
-  main
-  footer
+
+article-header
+article-main
+article-footer
 
 </template>
 
 <script>
-import Header from "../layouts/ArticlePageLayouts/Header.vue";
-import Main from "../layouts/ArticlePageLayouts/Main.vue";
-import Footer from "../layouts/ArticlePageLayouts/Footer.vue";
+import ArticleHeader from "../layouts/ArticlePageLayouts/Header.vue";
+import ArticleMain from "../layouts/ArticlePageLayouts/Main.vue";
+import ArticleFooter from "../layouts/ArticlePageLayouts/Footer.vue";
 
 export default {
   components: {
-    Header,
-    Main,
-    Footer,
+    ArticleHeader,
+    ArticleMain,
+    ArticleFooter,
   },
 };
 </script>

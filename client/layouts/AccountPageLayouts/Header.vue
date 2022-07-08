@@ -1,5 +1,6 @@
 <template lang="pug">
-h1 Article
+header 
+  h1 hello
 </template>
 
 <script>
