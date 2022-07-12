@@ -1,9 +1,15 @@
 <template lang="pug">
-h1 Article
+main-header
 </template>
 
 <script>
-export default {};
+import MainHeader from "../MainPageLayouts/Header.vue";
+
+export default {
+  components: {
+    MainHeader,
+  },
+};
 </script>
 
 <style></style>
