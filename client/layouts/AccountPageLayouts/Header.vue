@@ -1,6 +1,6 @@
 <template lang="pug">
 header 
-  h1 hello
+  h1 account
 </template>
 
 <script>

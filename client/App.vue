@@ -1,5 +1,5 @@
 <template lang="pug">
-h1 RouterApp
+
 .container
   router-view
 
@@ -20,6 +20,14 @@ export default {
 </script>
 
 <style lang="scss">
+body {
+  background-color: #42bfdd;
+}
+
+a {
+  color: #f0f6f6;
+}
+
 .container {
   max-width: 1230px;
   padding: 0 15px;
