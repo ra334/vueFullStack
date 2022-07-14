@@ -1,5 +1,4 @@
 <template lang="pug">
-router-link(to="/") main 
 .container
   router-view
 
