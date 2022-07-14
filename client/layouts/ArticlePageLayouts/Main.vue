@@ -8,20 +8,20 @@ p.text Write to
 .block
 	text-area.textarea
 .button__block
-	custom-button Save and Post
-	custom-button.right-button Save
+	button-url(to="#") Save and Post
+	button-url.right-button(to="#") Save
 
 
 </template>
 
 <script>
 import TextArea from "../../components/TextArea.vue";
-import CustomButton from "../../components/CustomButton.vue";
+import ButtonUrl from "../../components/ButtonUrl.vue";
 
 export default {
   components: {
     TextArea,
-    CustomButton,
+    ButtonUrl,
   },
 };
 </script>
@@ -36,14 +36,6 @@ export default {
 .block {
   display: flex;
   justify-content: center;
-}
-
-.title {
-  text-align: center;
-  margin-top: 50px;
-  font-size: 50px;
-  font-weight: 600;
-  color: #f0f6f6;
 }
 
 .button__block {

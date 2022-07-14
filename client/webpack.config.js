@@ -43,78 +43,78 @@ module.exports = {
 
     devServer: {
         port: process.env.PORT || 8080,
-        historyApiFallback: true
+        // historyApiFallback: true
 
     },
 
     module: {
         rules: [{
-                test: /\.js$/,
-                use: 'babel-loader',
-                exclude: file => (
-                    /node_modules/.test(file) &&
-                    !/\.vue\.js/.test(file)
-                )
-            },
+            test: /\.js$/,
+            use: 'babel-loader',
+            exclude: file => (
+                /node_modules/.test(file) &&
+                !/\.vue\.js/.test(file)
+            )
+        },
 
-            {
-                test: /\.tsx?$/,
-                use: 'ts-loader',
-                exclude: /node_modules/,
-            },
+        {
+            test: /\.tsx?$/,
+            use: 'ts-loader',
+            exclude: /node_modules/,
+        },
 
-            {
-                test: /\.vue$/,
-                use: 'vue-loader'
-            },
+        {
+            test: /\.vue$/,
+            use: 'vue-loader'
+        },
 
-            {
-                test: /\.(scss|sass|css)$/,
-                use: [
-                    'style-loader',
-                    'css-loader',
-                    'postcss-loader',
-                    'sass-loader'
-                ],
-            },
+        {
+            test: /\.(scss|sass|css)$/,
+            use: [
+                'style-loader',
+                'css-loader',
+                'postcss-loader',
+                'sass-loader'
+            ],
+        },
 
-            {
-                test: /\.pug$/,
-                oneOf: [{
-                        resourceQuery: /^\?vue/,
-                        use: ['pug-plain-loader']
-                    },
-                    {
-                        use: ['raw-loader', 'pug-plain-loader']
-                    }
-                ]
+        {
+            test: /\.pug$/,
+            oneOf: [{
+                resourceQuery: /^\?vue/,
+                use: ['pug-plain-loader']
             },
-
             {
-                test: /\.(png|jpg|svg|gif)$/,
-                loader: 'file-loader',
-                options: {
-                    outputPath: 'images',
-                },
-            },
-
-            {
-                test: /\.(woff|woff2|ttf|eot)$/,
-                loader: 'file-loader',
-                options: {
-                    outputPath: 'fonts',
-                },
-            },
-
-            {
-                test: /\.xml$/,
-                use: 'xml-loader'
-            },
-
-            {
-                test: /\.csv$/,
-                use: 'csv-loader'
+                use: ['raw-loader', 'pug-plain-loader']
             }
+            ]
+        },
+
+        {
+            test: /\.(png|jpg|svg|gif)$/,
+            loader: 'file-loader',
+            options: {
+                outputPath: 'images',
+            },
+        },
+
+        {
+            test: /\.(woff|woff2|ttf|eot)$/,
+            loader: 'file-loader',
+            options: {
+                outputPath: 'fonts',
+            },
+        },
+
+        {
+            test: /\.xml$/,
+            use: 'xml-loader'
+        },
+
+        {
+            test: /\.csv$/,
+            use: 'csv-loader'
+        }
         ]
     }
 }

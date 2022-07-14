@@ -1,10 +1,15 @@
 <template lang="pug">
-header 
-  h1 account
+header-components
+h1 account
 </template>
 
 <script>
-export default {};
+import HeaderComponents from "../../components/HeaderComponents.vue";
+export default {
+  components: {
+    HeaderComponents,
+  },
+};
 </script>
 
-<style></style>
+<style lang="scss"></style>

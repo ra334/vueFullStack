@@ -1,15 +1,14 @@
 <template lang="pug">
-main-header
+header-components
 </template>
 
 <script>
-import MainHeader from "../MainPageLayouts/Header.vue";
-
+import HeaderComponents from "../../components/HeaderComponents.vue";
 export default {
   components: {
-    MainHeader,
+    HeaderComponents,
   },
 };
 </script>
 
-<style></style>
+<style lang="scss"></style>

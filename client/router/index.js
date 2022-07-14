@@ -6,8 +6,7 @@ import Article from '../pages/ArticlePage.vue'
 
 
 export default createRouter({
-    routes: [
-        {
+    routes: [{
             path: '/',
             component: Main
         },

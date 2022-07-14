@@ -1,5 +1,5 @@
 <template lang="pug">
-
+router-link(to="/") main 
 .container
   router-view
 
@@ -7,14 +7,10 @@
 
 <script>
 import MainPage from "./pages/MainPage.vue";
-import ArticlePage from "./pages/ArticlePage.vue";
-import AccountPage from "./pages/AccountPage.vue";
 
 export default {
   components: {
     MainPage,
-    ArticlePage,
-    AccountPage,
   },
 };
 </script>
@@ -26,6 +22,7 @@ body {
 
 a {
   color: #f0f6f6;
+  cursor: pointer;
 }
 
 .container {
@@ -36,5 +33,13 @@ a {
 
 body {
   font-size: 17px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 50px;
+  font-weight: 600;
+  color: #f0f6f6;
 }
 </style>
