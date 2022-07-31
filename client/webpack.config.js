@@ -6,7 +6,7 @@ const { VueLoaderPlugin } = require('vue-loader');
 
 const PATHS = {
     src: path.resolve(),
-    copyPath: path.join(__dirname, 'build/')
+    copyPath: path.join(__dirname, '..', 'server', 'public', 'build')
 }
 
 const isDev = process.env.NODE_ENV === 'development';
@@ -19,7 +19,7 @@ module.exports = {
     },
     output: {
         filename: 'js/min_js/[name].bundle.js',
-        path: path.join(__dirname, '..', 'server', 'public', 'build')
+        path: PATHS.copyPath
     },
 
     resolve: {
@@ -38,12 +38,17 @@ module.exports = {
         }),
         new CleanWebpackPlugin(),
         new VueLoaderPlugin(),
-        // new CopyWebpackPlugin({patterns: []})
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: 'assets/images', to: PATHS.copyPath + '/images' },
+                { from: 'assets/fonts', to: PATHS.copyPath + '/fonts' }
+            ]
+        })
     ],
 
     devServer: {
         port: process.env.PORT || 8080,
-        // historyApiFallback: true
+        historyApiFallback: true
 
     },
 

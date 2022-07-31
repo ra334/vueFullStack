@@ -5,15 +5,7 @@ h1.title New posts
 </template>
 
 <script>
-export default {
-  data() {
-    return {};
-  },
-
-  methods: {},
-
-  mounted() {},
-};
+export default {};
 </script>
 
 <style lang="scss"></style>

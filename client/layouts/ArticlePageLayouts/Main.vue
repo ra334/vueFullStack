@@ -6,22 +6,38 @@ p.text Write to
 		a(href='https://www.markdownguide.org/basic-syntax/') MarkDown.
 
 .block
-	text-area.textarea
+	textarea.textarea(v-model="textAreaContent")
 .button__block
-	button-url(to="#") Save and Post
-	button-url.right-button(to="#") Save
+	button-btn(@click="post(textAreaContent)") Post
+	button-btn.right-button(@click="save(textAreaContent)") Save
 
 
 </template>
 
 <script>
 import TextArea from "../../components/TextArea.vue";
-import ButtonUrl from "../../components/ButtonUrl.vue";
+import ButtonBtn from "../../components/ButtonBtn.vue";
+import { makeArticlePost, makeArticleSave } from "../../api/makeArticlePost.js";
 
 export default {
   components: {
     TextArea,
-    ButtonUrl,
+    ButtonBtn,
+  },
+
+  data() {
+    return {
+      textAreaContent: "",
+    };
+  },
+
+  methods: {
+    post(content) {
+      makeArticlePost(content);
+    },
+    save(content) {
+      makeArticleSave(content);
+    },
   },
 };
 </script>

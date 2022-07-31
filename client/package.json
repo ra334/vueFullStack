@@ -6,7 +6,7 @@
     "scripts": {
         "dev": "cross-env NODE_ENV=development webpack",
         "build": "cross-env NODE_ENV=production webpack",
-        "start": "cross-env NODE_ENV=development PORT=8080 webpack-dev-server --open"
+        "start": "cross-env NODE_ENV=development PORT=443 webpack-dev-server --open"
     },
     "author": "",
     "license": "ISC",
